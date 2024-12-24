@@ -1,0 +1,143 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-size:13px
+}
+
+.conatainer {
+    width: 400px;
+    height: fit-content;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    color: #265866;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+
+.conatainer .logo{
+	  margin: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.conatainer .logo img{
+    width: 100px;
+    height: 50px;
+}
+
+.conatainer button{
+    text-transform: uppercase;
+	  background: #2196f3;
+    padding: 10px;
+    border: 0;
+    color: #fff;
+    width: 100%;
+    border-radius: 0px;
+	  cursor:pointer
+}
+
+.conatainer button:hover{
+	background-color: #0056b3;
+}
+
+#toggleButton {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#toggleButton:disabled {
+    background-color: #ccc;
+}
+
+
+/* Check boxes ////////////////////// */
+
+/*  CheckBox Style */
+.item-container-row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.switch-container .switch {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 20px;
+  }
+  
+.switch-container{ 
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: center;
+      align-items: center;
+      gap: 5px;
+  }
+      
+.switch-container input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+ .switch-container .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+ .switch-container .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+.switch-container input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+.switch-container input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+.switch-container input:checked + .slider:before {
+    -webkit-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    transform: translateX(15px);
+  }
+  
+ .switch-container .slider.round {
+    border-radius: 34px;
+  }
+  
+.switch-container .slider.round:before {
+    border-radius: 50%;
+  }
